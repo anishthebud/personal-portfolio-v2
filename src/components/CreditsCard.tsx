@@ -35,7 +35,7 @@ export function CreditsCard({ className }: CreditsCardProps) {
           </li>
         ))}
       </ul>
-      <p className="text-2xl">
+      <p className="text-3xl">
         Built By <strong>Anish Budida</strong>
       </p>
     </motion.div>
