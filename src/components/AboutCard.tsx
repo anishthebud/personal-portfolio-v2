@@ -39,16 +39,16 @@ export function AboutCard({ className }: AboutCardProps) {
         </p>
         <p>
           {' - '}
-          <span>
-            Worked on <strong>GROWER</strong> Research Project and with <strong>Georgia-Pacific</strong>
-          </span>
-        </p>
-        <p>
-          {' - '}
           <span>Interested in </span>
           <strong>full-stack, machine learning, </strong>
           <span>and </span>
           <strong>product management</strong>
+        </p>
+        <p>
+          {' - '}
+          <span>
+            Worked on <strong>GROWER</strong> Research Project and with <strong>Georgia-Pacific</strong>
+          </span>
         </p>
         <p>
           {' - '}
@@ -64,7 +64,7 @@ export function AboutCard({ className }: AboutCardProps) {
           <strong>Summer 2027 SWE</strong>
           <span> or </span>
           <strong>PM</strong>
-          <span> role</span>
+          <span> internship</span>
         </p>
       </div>
 
@@ -74,7 +74,7 @@ export function AboutCard({ className }: AboutCardProps) {
           <strong>Fun Facts</strong>
         </p>
         <p>{' - Avid GeoGuessr player'}</p>
-        <p>{' - Taking a sustainable cities minor'}</p>
+        <p>{' - Pursuing a sustainable cities minor'}</p>
         <p>{' - Love exploring and hiking'}</p>
         <p>{' - Creating content on Instagram'}</p>
       </div>

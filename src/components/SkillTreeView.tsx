@@ -23,7 +23,7 @@ export function SkillTreeView({
   return (
     <div
       className={cn(
-        'relative flex flex-col overflow-hidden',
+        'flex flex-col overflow-hidden',
         'rounded-[var(--detail-card-radius)]',
         'bg-[var(--credits-surface)]',
         'shadow-[var(--about-card-shadow)]',
@@ -31,36 +31,33 @@ export function SkillTreeView({
         className,
       )}
     >
-      {/* Floating back button */}
-      <button
-        onClick={onBack}
-        aria-label="Go back"
-        className={cn(
-          'absolute top-3 left-3',
-          'flex items-center justify-center',
-          'h-8 w-8 rounded-full',
-          'bg-[rgba(0,0,0,0.35)]',
-          'text-white',
-          'cursor-pointer',
-          'z-10',
-        )}
-      >
-        <ChevronLeft className="h-5 w-5" strokeWidth={2.5} />
-      </button>
-
       {/* Content area */}
       <div className="flex flex-col gap-5 pt-5 px-6 pb-6">
-        {/* Area title */}
-        <h2
-          className={cn(
-            'text-[32px] font-bold leading-tight',
-            'text-white',
-            'pt-8',
-          )}
-          style={{ fontFamily: 'Alegreya Sans SC, var(--font-display-portfolio), serif' }}
-        >
-          {title}
-        </h2>
+        {/* Title row with back button */}
+        <div className="flex items-center gap-3">
+          <button
+            onClick={onBack}
+            aria-label="Go back"
+            className={cn(
+              'flex items-center justify-center shrink-0',
+              'h-8 w-8 rounded-full',
+              'bg-[rgba(0,0,0,0.35)]',
+              'text-white',
+              'cursor-pointer',
+            )}
+          >
+            <ChevronLeft className="h-5 w-5" strokeWidth={2.5} />
+          </button>
+          <h2
+            className={cn(
+              'text-[32px] font-bold leading-tight',
+              'text-white',
+            )}
+            style={{ fontFamily: 'Alegreya Sans SC, var(--font-display-portfolio), serif' }}
+          >
+            {title}
+          </h2>
+        </div>
 
         {/* Skill categories */}
         {categories.map((category, categoryIndex) => (

@@ -43,7 +43,7 @@ export function DetailCard({
             className={cn(
               'w-full object-cover',
               'rounded-t-[var(--detail-card-radius)] overflow-hidden',
-              'max-h-52',
+              'max-h-36',
             )}
           />
         ) : (
@@ -74,12 +74,12 @@ export function DetailCard({
       </div>
 
       {/* Content area */}
-      <div className="flex flex-col gap-3 px-[25px] pt-5 pb-6">
+      <div className="flex flex-col gap-2 px-[25px] pt-4 pb-4">
         {/* Title */}
         <div className="flex items-center justify-between gap-3">
           <h2
             className={cn(
-              'text-[32px] font-bold leading-tight',
+              'text-[26px] font-bold leading-tight',
               'text-white',
             )}
           >
@@ -116,7 +116,7 @@ export function DetailCard({
         {/* Description */}
         <p
           className={cn(
-            'text-[18px] leading-relaxed',
+            'text-[15px] leading-relaxed',
             'text-[var(--portfolio-subtitle)]',
           )}
         >
@@ -124,7 +124,7 @@ export function DetailCard({
         </p>
 
         {/* Skill badge chips */}
-        <div className="flex flex-wrap gap-2 mt-1">
+        <div className="flex flex-wrap gap-2">
           {skills.map((skill, i) => (
             <motion.span
               key={skill}

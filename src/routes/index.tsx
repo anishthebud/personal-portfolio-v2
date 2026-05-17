@@ -47,7 +47,7 @@ function LinkedinIcon({ className }: { className?: string }) {
 
 interface NavLinksProps {
   activeSection: string | null
-  onSectionChange: (href: string) => void
+  onSectionChange: (href: string | null) => void
 }
 
 function NavLinks({ activeSection, onSectionChange }: NavLinksProps) {
@@ -87,7 +87,7 @@ function NavLinks({ activeSection, onSectionChange }: NavLinksProps) {
             onHoverEnd={() => setHoveredIndex(null)}
             onClick={(e) => {
               e.preventDefault()
-              onSectionChange(link.href)
+              onSectionChange(isActive ? null : link.href)
             }}
           >
             {link.label}
@@ -140,7 +140,7 @@ function Home() {
       {/* Left-side content panel */}
       <motion.div
         className="relative z-10 flex min-h-screen flex-col px-[5vw] py-[9vh]"
-        style={{ maxWidth: '50vw' }}
+        style={{ maxWidth: '40vw' }}
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -175,7 +175,7 @@ function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
         >
-          Full-Stack &amp; Machine Learning Developer
+          Software Engineer &amp; Product Manager
         </motion.p>
 
         {/* Nav links */}
@@ -212,7 +212,7 @@ function Home() {
       </motion.div>
 
       {/* Right-side section panels */}
-      <div className="absolute inset-y-0 right-0 z-10 flex flex-col w-[50%] items-center overflow-y-auto scrollbar-hide px-8">
+      <div className="absolute inset-y-0 left-[40%] right-0 z-10 flex flex-col items-center overflow-y-auto scrollbar-hide px-8">
         {activeSection === '#about' && (
           <section id="about" className="my-auto py-[8vh] w-full max-w-[798px]">
             <AboutCard className="w-full" />

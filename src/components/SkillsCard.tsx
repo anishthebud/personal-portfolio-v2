@@ -4,8 +4,6 @@ import { cn } from '@/lib/utils'
 import { SkillAreaCard } from '@/components/SkillAreaCard'
 import { SkillTreeView } from '@/components/SkillTreeView'
 
-const SHANGHAI_IMG = '/images/skills/shanghai.jpg'
-
 interface SkillArea {
   label: string
   title: string
@@ -17,7 +15,7 @@ const SKILL_AREAS: SkillArea[] = [
   {
     label: 'Full-Stack Development',
     title: 'Full-Stack Development',
-    image: SHANGHAI_IMG,
+    image: 'images/skills/full-stack.png',
     categories: [
       {
         label: 'Languages',
@@ -56,7 +54,7 @@ const SKILL_AREAS: SkillArea[] = [
   {
     label: 'Machine Learning',
     title: 'Machine Learning',
-    image: SHANGHAI_IMG,
+    image: 'images/skills/machine-learning.jpg',
     categories: [
       {
         label: 'Core ML',
@@ -72,7 +70,7 @@ const SKILL_AREAS: SkillArea[] = [
       },
       {
         label: 'Data & Analytics',
-        skills: ['Pandas', 'NumPy', 'Matplotlib', 'Plotly', 'Data Visualization', 'Geospatial Mapping'],
+        skills: ['Pandas', 'NumPy', 'Matplotlib', 'Plotly', 'Data Visualization'],
       },
       {
         label: 'Data Collection',
@@ -83,7 +81,7 @@ const SKILL_AREAS: SkillArea[] = [
   {
     label: 'Product Management',
     title: 'Product Management',
-    image: SHANGHAI_IMG,
+    image: 'images/skills/product-management.png',
     categories: [
       {
         label: 'Methodology',
