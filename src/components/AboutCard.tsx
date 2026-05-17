@@ -78,26 +78,6 @@ export function AboutCard({ className }: AboutCardProps) {
         <p>{' - Love exploring and hiking'}</p>
         <p>{' - Creating content on Instagram'}</p>
       </div>
-
-      {/* Bottom icon row */}
-      <div className="flex flex-row items-center justify-between mt-2">
-        {/* Left cluster: GT logo + GitHub */}
-        <div className="flex flex-row items-center gap-3">
-          <img
-            src={gtLogoUrl}
-            alt="Georgia Tech"
-            className="h-12 w-auto object-contain"
-          />
-          <Folder className="h-8 w-8 text-[var(--portfolio-subtitle)]" aria-label="GitHub" />
-        </div>
-
-        {/* Right cluster: map pin + tree + Instagram */}
-        <div className="flex flex-row items-center gap-3">
-          <MapPin className="h-8 w-8 text-[var(--portfolio-subtitle)]" aria-label="Location" />
-          <TreePine className="h-8 w-8 text-[var(--portfolio-subtitle)]" aria-label="Sustainable cities" />
-          <BookImage className="h-8 w-8 text-[var(--portfolio-subtitle)]" aria-label="Instagram" />
-        </div>
-      </div>
     </motion.div>
   )
 }
