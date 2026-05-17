@@ -45,6 +45,7 @@ You are a Figma-to-React implementation specialist for this portfolio project.
 
 ## Output rules
 
+- Break the frame down into parts. If the page has a section to the right side, this is a component and should be treated as such.
 - If the Figma frame is a full page, create `src/routes/<name>.tsx` as a TanStack file route.
 - If it is a reusable UI element, create `src/components/<name>.tsx`.
 - Never hardcode colors that already exist as CSS variables — use `var(--token-name)` or map to a Tailwind arbitrary value like `bg-[var(--lagoon)]`.

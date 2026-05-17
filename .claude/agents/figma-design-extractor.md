@@ -1,12 +1,12 @@
 ---
 name: figma-design-extractor
-description: Proactively extracts styles from Figma designs and formats them into the styling document. Looks for items such as colors, fonts, font sizes, components, component states, and writes them in a format that follows CSS styling conventions. Proactively creates variables for these styles for use in pages and components. Identifies if similar styles are already in the styling document.
+description: Proactively extracts styles from Figma designs and formats them into the styling document. Proactively use this agent when a Figma URL is input. Looks for items such as colors, fonts, font sizes, components, component states, and writes them in a format that follows CSS styling conventions. Proactively creates variables for these styles for use in pages and components. Identifies if similar styles are already in the styling document.
 tools: mcp__claude_ai_Figma__get_design_context, mcp__claude_ai_Figma__get_variable_defs, mcp__claude_ai_Figma__get_screenshot, mcp__claude_ai_Figma__get_metadata, mcp__claude_ai_Figma__whoami, Read, Grep, Edit
 ---
 
 Your task is to extract styles from Figma designs, create variables for each of those styles, and then put them into `src/styles.css`, as well as `styles.md`.
 
-When asked to extract a design from Figma,
+When asked to extract a design from Figma URL,
 
 1. Gain access to the Figma file.
 2. Extract the design context from the Figma design.

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Alegreya+Sans+SC:wght@400;500;900&display=swap');
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
@@ -26,6 +26,36 @@
   --link-bg-hover: rgba(255, 255, 255, 0.9);
   --hero-a: rgba(79, 184, 178, 0.36);
   --hero-b: rgba(47, 106, 74, 0.2);
+
+  /* --- Home Screen (Figma: node 4002-81) --- */
+  /* Colors */
+  --portfolio-purple: #a48fd4;
+  --portfolio-purple-hero: rgba(164, 143, 212, 0.8);
+  --portfolio-subtitle: #e2dcef;
+
+  /* Typography */
+  --font-display-portfolio: 'Alegreya Sans SC', Georgia, serif;
+  --font-size-hero-name: 6rem;        /* 96px — hero name "Anish Budida" */
+  --font-size-nav-link: 4rem;         /* 64px — sidebar nav items (About Me, Projects, Experience, Skills, Credits) */
+  --font-size-subtitle: 2rem;         /* 32px — hero subtitle */
+
+  /* Social icon sizes */
+  --icon-size-social: 3rem;           /* 48px — Github / LinkedIn icons */
+
+  /* --- Sidebar nav link interaction states (Figma: nodes 2026-36, 2070-81) --- */
+  /* Hover state */
+  --nav-link-hover-color: #7B33FFBF;                  /* #7B33FF at 75% opacity */
+  --nav-link-hover-decoration: underline;             /* underline appears on hover */
+  --nav-link-hover-decoration-style: solid;           /* solid underline line style */
+  --nav-link-hover-decoration-position: from-font;   /* underline position defers to font metrics */
+  --nav-link-hover-font-weight: 500;                  /* Medium — weight stays the same as default */
+
+  /* Selected / active state */
+  --nav-link-active-color: #a48fd4;                   /* same purple — color does not change when active */
+  --nav-link-active-decoration: underline;            /* underline persists when active */
+  --nav-link-active-decoration-style: solid;          /* solid underline line style */
+  --nav-link-active-decoration-position: from-font;  /* underline position defers to font metrics */
+  --nav-link-active-font-weight: 800;                 /* ExtraBold — weight increases when active */
 
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
