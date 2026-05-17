@@ -93,3 +93,35 @@ Node `2044-84` is `Rectangle 2` — the main card panel of the About Me section.
 |---|---|---|
 | `--credits-surface` | `rgba(60, 28, 133, 0.8)` | Exact fill match; `--about-card-bg` is an alias pointing to it |
 | `.section-card` box-shadow | `5px 5px 10px 0 rgba(0, 0, 0, 0.5)` | Same shadow value already in the utility class, now also exposed as `--about-card-shadow` variable |
+
+---
+
+## Project Cards (Figma node `2044-120`)
+
+Node `2044-120` is the project card grid — a 2-column, 3-row layout of 6 project cards (Content Creation Manager, Steam Game Recommender, Look At Me, Traffic Accident Analyzer, Braille Buddy, Confido). Each card is a fixed-size rounded purple rectangle containing a thumbnail image and a title label below it.
+
+### New Tokens Added
+
+| Variable | Value | Usage |
+|---|---|---|
+| `--project-card-bg` | `var(--credits-surface)` → `rgba(60, 28, 133, 0.8)` | Fill color of each project card — aliases the shared credits/about surface color |
+| `--project-card-radius` | `10px` | Corner radius on individual project cards (smaller than `--about-card-radius: 40px`) |
+| `--project-card-shadow` | `5px 5px 10px 0px rgba(0, 0, 0, 0.5)` | Drop shadow applied to select cards in the grid |
+| `--project-card-width` | `300px` | Fixed width of each project card |
+| `--project-card-height` | `200px` | Fixed height of each project card |
+| `--project-card-image-width` | `257px` | Width of the thumbnail image area inside each card |
+| `--project-card-image-height` | `153px` | Height of the thumbnail image area inside each card |
+| `--project-card-label-color` | `#ffffff` | White text color for project card titles |
+| `--font-size-project-card-label` | `1.5rem` (24px) | Font size of the project title label — `font-weight: 500` (Medium), `font-family: Alegreya Sans SC` |
+
+### Already-Existing Tokens (not duplicated)
+
+| Token | Value | Reason reused |
+|---|---|---|
+| `--credits-surface` | `rgba(60, 28, 133, 0.8)` | Exact fill match; `--project-card-bg` aliases it |
+| `--font-display-portfolio` | `'Alegreya Sans SC', Georgia, serif` | Same font family used for card labels |
+| `--about-card-shadow` | `5px 5px 10px 0px rgba(0, 0, 0, 0.5)` | Same shadow value; `--project-card-shadow` carries it independently for the project card context |
+
+### Typography Detail
+
+Card labels use `font-family: Alegreya Sans SC`, `font-weight: 500` (Medium), `font-size: 24px` (`--font-size-project-card-label`), `color: #ffffff` (`--project-card-label-color`), `font-style: normal`, `line-height: normal`.

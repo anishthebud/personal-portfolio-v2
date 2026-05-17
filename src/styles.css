@@ -39,6 +39,22 @@
   --about-card-radius: 40px;                         /* 40px corner radius on section cards */
   --about-card-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); /* drop shadow on the card */
 
+  /* --- Project Cards (Figma: node 2044-120) --- */
+  --project-card-bg: rgba(60, 28, 133, 0.85);         /* deep indigo-purple — projects section */
+  --project-card-radius: 10px;                        /* 10px corner radius on individual project cards */
+  --project-card-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); /* drop shadow (present on select cards) */
+  --project-card-width: 300px;                        /* fixed card width */
+  --project-card-height: 200px;                       /* fixed card height */
+  --project-card-image-width: 257px;                  /* project thumbnail width inside card */
+  --project-card-image-height: 153px;                 /* project thumbnail height inside card */
+  --project-card-label-color: #ffffff;                /* white — card title text color */
+  --font-size-project-card-label: 1.5rem;             /* 24px — project card title text size */
+
+  /* --- Experience Cards --- */
+  --experience-card-bg: rgba(100, 26, 118, 0.85);     /* violet-magenta purple — noticeably different from project cards */
+  --projects-section-bg: rgba(30, 12, 95, 0.85);      /* outer container for projects panel */
+  --experience-section-bg: rgba(55, 10, 78, 0.85);    /* outer container for experience panel */
+
   /* Typography */
   --font-display-portfolio: 'Alegreya Sans SC', Georgia, serif;
   --font-size-hero-name: 6rem;        /* 96px — hero name "Anish Budida" */
@@ -362,6 +378,15 @@ a {
 .nav-link:hover::after,
 .nav-link.is-active::after {
   transform: scaleX(1);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 .rise-in {

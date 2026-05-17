@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { cn } from '#/lib/utils'
 import { CreditsCard } from '@/components/CreditsCard'
 import { AboutCard } from '@/components/AboutCard'
+import { ProjectsCard } from '@/components/ProjectsCard'
+import { ExperienceCard } from '@/components/ExperienceCard'
 
 
 export const Route = createFileRoute('/')({ component: Home })
@@ -209,14 +211,24 @@ function Home() {
       </motion.div>
 
       {/* Right-side section panels */}
-      <div className="absolute inset-y-0 right-0 z-10 flex w-[50%] items-center justify-center px-8">
+      <div className="absolute inset-y-0 right-0 z-10 flex flex-col w-[50%] items-center overflow-y-auto scrollbar-hide px-8">
         {activeSection === '#about' && (
-          <section id="about" className="w-full max-w-[798px]">
+          <section id="about" className="my-auto py-[8vh] w-full max-w-[798px]">
             <AboutCard className="w-full" />
           </section>
         )}
+        {activeSection === '#projects' && (
+          <section id="projects" className="my-auto py-[8vh] w-full max-w-[798px]">
+            <ProjectsCard className="w-full" />
+          </section>
+        )}
+        {activeSection === '#experience' && (
+          <section id="experience" className="my-auto py-[8vh] w-full max-w-[798px]">
+            <ExperienceCard className="w-full" />
+          </section>
+        )}
         {activeSection === '#credits' && (
-          <section id="credits" className="w-full max-w-[798px]">
+          <section id="credits" className="my-auto py-[8vh] w-full max-w-[798px]">
             <CreditsCard />
           </section>
         )}
