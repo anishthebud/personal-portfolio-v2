@@ -1,13 +1,9 @@
 import { motion } from 'motion/react'
+import { Folder, MapPin, TreePine, BookImage } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
-// Icon asset URLs from Figma (node 2044:83)
 const gtLogoUrl =
   'https://www.figma.com/api/mcp/asset/0db1408e-ab73-425e-a699-9754e1420e57'
-const folderGitUrl =
-  'https://www.figma.com/api/mcp/asset/c2f39591-a19d-4219-9d5c-632d18cfe52f'
-const treePinUrl =
-  'https://www.figma.com/api/mcp/asset/84467ba8-752c-412e-a4d5-8fa45891da5e'
 
 interface AboutCardProps {
   className?: string
@@ -28,7 +24,7 @@ export function AboutCard({ className }: AboutCardProps) {
       )}
     >
       {/* Main bullet list */}
-      <div className="flex flex-col gap-1 text-[clamp(1.1rem,1.6vw,2rem)] leading-snug">
+      <div className="flex flex-col gap-1 text-[clamp(1.1rem,1.6vw,1.8rem)] leading-snug">
         <p>
           {' - '}
           <span>Rising third-year CS major at </span>
@@ -85,63 +81,21 @@ export function AboutCard({ className }: AboutCardProps) {
 
       {/* Bottom icon row */}
       <div className="flex flex-row items-center justify-between mt-2">
-        {/* Left cluster: GT logo + folder-git */}
+        {/* Left cluster: GT logo + GitHub */}
         <div className="flex flex-row items-center gap-3">
           <img
             src={gtLogoUrl}
             alt="Georgia Tech"
             className="h-12 w-auto object-contain"
           />
-          <img
-            src={folderGitUrl}
-            alt="GitHub"
-            className="h-12 w-12 object-contain border border-white"
-          />
+          <Folder className="h-8 w-8 text-[var(--portfolio-subtitle)]" aria-label="GitHub" />
         </div>
 
         {/* Right cluster: map pin + tree + Instagram */}
         <div className="flex flex-row items-center gap-3">
-          {/* Map pin — inline SVG */}
-          <span className="flex items-center justify-center h-12 w-12">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-7 h-7 text-[var(--portfolio-subtitle)]"
-              aria-label="Location"
-            >
-              <path d="M12 2C8.686 2 6 4.686 6 8c0 4.5 6 12 6 12s6-7.5 6-12c0-3.314-2.686-6-6-6z" />
-              <circle cx="12" cy="8" r="2" />
-            </svg>
-          </span>
-
-          {/* Tree (sustainability) */}
-          <img
-            src={treePinUrl}
-            alt="Sustainable cities"
-            className="h-12 w-12 object-contain border border-white"
-          />
-
-          {/* Instagram — inline SVG */}
-          <span className="flex items-center justify-center h-12 w-12">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-7 h-7 text-[var(--portfolio-subtitle)]"
-              aria-label="Instagram"
-            >
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-              <circle cx="12" cy="12" r="4" />
-              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
-            </svg>
-          </span>
+          <MapPin className="h-8 w-8 text-[var(--portfolio-subtitle)]" aria-label="Location" />
+          <TreePine className="h-8 w-8 text-[var(--portfolio-subtitle)]" aria-label="Sustainable cities" />
+          <BookImage className="h-8 w-8 text-[var(--portfolio-subtitle)]" aria-label="Instagram" />
         </div>
       </div>
     </motion.div>
