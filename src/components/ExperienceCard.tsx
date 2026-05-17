@@ -14,14 +14,14 @@ interface ExperienceItem {
 const EXPERIENCES: ExperienceItem[] = [
   {
     title: 'GROWER',
-    image: '/images/experiences/grower.jpeg',
+    image: '/images/experiences/grower.png',
     description:
-      'Software Engineer in the Internet Intelligence Lab at Georgia Tech, researching correlations between power outages and internet disruptions. Built and maintained Python/Selenium scrapers deployed on AWS.',
+      'Software Engineer that partnered with the Internet Intelligence Lab, researching correlations between power outages and internet outages. Built and maintained Python/Selenium scrapers deployed on AWS.',
     skills: ['Python', 'Pandas', 'Selenium', 'Web Scraping', 'AWS', 'Docker', 'Matplotlib', 'Plotly', 'ETL Pipelines'],
   },
   {
     title: 'Georgia-Pacific',
-    image: '/images/experiences/georgia_pacific.jpeg',
+    image: '/images/experiences/georgia_pacific.png',
     description:
       'Product Fellow focused on redesigning the digital interface for GP PRO dispensers. Applied Agile methods, user research, and competitive analysis, then pitched feasibility and effectiveness to clients.',
     skills: ['UI/UX', 'Product Management', 'Agile Development', 'User Research', 'Competitive Analysis'],
@@ -35,7 +35,7 @@ const EXPERIENCES: ExperienceItem[] = [
   },
 ]
 
-const EXPERIENCE_CARD_BG = 'rgba(100, 26, 118, 0.85)'
+const EXPERIENCE_CARD_BG = 'rgba(60, 28, 133, 0.85)'
 
 interface ExperienceCardProps {
   className?: string

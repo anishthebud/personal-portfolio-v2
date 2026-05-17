@@ -7,6 +7,7 @@ import { DetailCard } from '@/components/DetailCard'
 interface ProjectItem {
   title: string
   image: string
+  projectUrl?: string
   href: string
   description: string
   skills: string[]
@@ -16,57 +17,60 @@ const PROJECTS: ProjectItem[] = [
   {
     title: 'Content Creation Manager',
     image: '/images/projects/content_creation_manager.png',
-    href: 'https://github.com/anishthebud',
+    href: 'https://github.com/anishthebud/content-creation-manager',
     description:
-      'Electron desktop application for managing video content production pipelines with end-to-end pre-production, production, and distribution workflows.',
+      'Full-stack desktop application for managing video content production pipeline with comprehensive workflow including pre-production, production, post-poroduction and distribution.',
     skills: ['Electron', 'React', 'JavaScript', 'MongoDB', 'Tailwind CSS', 'Vite', 'TanStack Router', 'IPC', 'Cross-Platform'],
   },
   {
-    title: 'Steam Game Recommender',
+    title: 'Steam VG Personality Quiz',
     image: '/images/projects/steam-vg-personality-quiz.jpeg',
-    href: 'https://github.com/anishthebud',
+    projectUrl: 'https://master.d2pkiqyt9q31d2.amplifyapp.com/',
+    href: 'https://github.com/anishthebud/game_recommendation_engine',
     description:
-      'Full-stack ML quiz that recommends Steam games from a catalog of over 80,000 titles using cosine-similarity filtering and OpenAI-generated adaptive questions.',
+      'Full-stack web application that recommends Steam games from a catalog of over 80,000 titles using cosine-similarity filtering and OpenAI-generated adaptive questions.',
     skills: ['Python', 'FastAPI', 'React', 'scikit-learn', 'OpenAI API', 'AWS', 'Docker', 'CI/CD'],
   },
   {
     title: 'Look At Me',
     image: '/images/projects/look_at_me.png',
-    href: 'https://github.com/anishthebud',
+    projectUrl: 'https://chromewebstore.google.com/detail/look-at-me/gmdiakgkdgohhfppabhcppmnkcpcgjkm',
+    href: 'https://github.com/anishthebud/look-at-me',
     description:
-      'Published Chrome extension for task focus and productivity, featuring real-time task tracking across browser sessions with a custom new-tab override page.',
+      'Published Chrome extension for task focus and productivity, featuring real-time task tracking across browser sessions with a custom new tab page for easy usability.',
     skills: ['TypeScript', 'React', 'Chrome Extension APIs', 'Service Workers', 'Vite', 'Browser Storage', 'Custom Hooks'],
   },
   {
     title: 'YouTube-VoiceOver',
     image: '/images/placeholder.png',
-    href: 'https://github.com/anishthebud',
+    href: 'https://github.com/anishthebud/YouTube-VoiceOver',
     description:
-      'Chrome extension paired with a Node.js backend that overlays user-recorded voiceovers onto YouTube videos using FFmpeg compositing.',
+      'Chrome extension paired with a Node.js backend that overlays user-recorded voiceovers onto YouTube videos using FFmpeg composition.',
     skills: ['JavaScript', 'Node.js', 'Express', 'FFmpeg', 'yt-dlp', 'MediaRecorder API', 'REST APIs', 'CORS'],
   },
   {
     title: 'Traffic Accident Analyzer',
     image: '/images/projects/traffic_accident_analyzer.png',
-    href: 'https://github.com/anishthebud',
+    projectUrl: 'https://github.gatech.edu/pages/vpatra3/ML-Traffic-Analyzer/',
+    href: 'https://github.gatech.edu/vpatra3/ML-Traffic-Analyzer',
     description:
-      'Data analysis and visualization tool for exploring traffic accident patterns, producing interactive charts and county-level geospatial maps.',
-    skills: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Plotly', 'Data Visualization', 'Geospatial Mapping', 'Machine Learning'],
+      'Team project focused on building a data analysis and visualization tool for exploring traffic accident patterns. My focus was on developing the data/feature engineering pipeline.',
+    skills: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Plotly', 'Data Visualization', 'Machine Learning'],
   },
   {
     title: 'Braille Buddy',
     image: '/images/placeholder.png',
-    href: 'https://github.com/anishthebud',
+    href: 'https://github.com/anishthebud/brailleBuddy',
     description:
-      'Native Android accessibility app enabling two-way communication between deaf/blind and sighted/hearing users via a custom Braille keyboard and vibration patterns.',
-    skills: ['Java', 'Android SDK', 'Google Cloud', 'Speech Recognition', 'Material Design', 'Multi-threading', 'Accessibility'],
+      'Hackathon project focused on building a native Android accessibility app enabling two-way communication between deaf/blind and sighted/hearing users via a custom Braille keyboard and vibration patterns. My focus was on developing the user experience and the frontend for the app.',
+    skills: ['Java', 'Android SDK', 'Google Cloud', 'UI/UX Design', 'Speech Recognition', 'Material Design', 'Multi-threading', 'Accessibility'],
   },
   {
     title: 'Confido',
-    image: '/images/projects/confido.png',
-    href: 'https://github.com/anishthebud',
+    image: '/images/placeholder.png',
+    href: 'https://github.com/anishthebud/confido',
     description:
-      'AI-powered public speaking coach built at a hackathon. Full-stack web app with gamified scoring, an interactive AI avatar, and real-time feedback on confidence and filler words.',
+      'AI-powered public speaking coach built at a hackathon. Full-stack web app with gamified scoring, an interactive AI avatar, and real-time feedback on confidence and filler words. My focus was on developing the user experience, gamification process, and managing the database.',
     skills: ['SvelteKit', 'TypeScript', 'Supabase', 'LLM Integration', 'Speech-to-Text', 'Text-to-Speech', 'Stable Diffusion', 'Pinata/IPFS'],
   },
 ]
@@ -106,6 +110,8 @@ export function ProjectsCard({ className }: ProjectsCardProps) {
               image={selected.image}
               description={selected.description}
               skills={selected.skills}
+              projectUrl={selected.projectUrl}
+              href={selected.href}
               onBack={() => setSelected(null)}
             />
           </motion.div>
