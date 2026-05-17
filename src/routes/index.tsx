@@ -2,6 +2,8 @@ import { createFileRoute } from '@tanstack/react-router'
 import { motion } from 'motion/react'
 import { useState } from 'react'
 import { cn } from '#/lib/utils'
+import { CreditsCard } from '@/components/CreditsCard'
+import { AboutCard } from '@/components/AboutCard'
 
 
 export const Route = createFileRoute('/')({ component: Home })
@@ -40,7 +42,12 @@ function LinkedinIcon({ className }: { className?: string }) {
   )
 }
 
-function NavLinks() {
+interface NavLinksProps {
+  activeSection: string | null
+  onSectionChange: (href: string) => void
+}
+
+function NavLinks({ activeSection, onSectionChange }: NavLinksProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
@@ -50,6 +57,7 @@ function NavLinks() {
     >
       {NAV_LINKS.map((link, i) => {
         const isHovered = hoveredIndex === i
+        const isActive = activeSection === link.href
         return (
           <motion.a
             key={link.label}
@@ -58,10 +66,10 @@ function NavLinks() {
             style={{
               fontFamily: 'var(--font-display-portfolio)',
               fontSize: 'clamp(2rem, 4vw, var(--font-size-nav-link))',
-              fontWeight: 500,
-              color: 'var(--portfolio-purple)',
-              textDecoration: isHovered ? 'underline solid' : 'none',
-              textUnderlinePosition: isHovered ? 'from-font' : undefined,
+              fontWeight: isActive ? 800 : 500,
+              color: isActive ? 'var(--nav-link-active-color)' : 'var(--portfolio-purple)',
+              textDecoration: isHovered || isActive ? 'underline solid' : 'none',
+              textUnderlinePosition: isHovered || isActive ? 'from-font' : undefined,
               marginBottom: 'clamp(1rem, 2vh, 2rem)',
             }}
             initial={{ opacity: 0, x: -18 }}
@@ -74,6 +82,10 @@ function NavLinks() {
             whileHover={{ x: 6, color: 'var(--nav-link-hover-color)' }}
             onHoverStart={() => setHoveredIndex(i)}
             onHoverEnd={() => setHoveredIndex(null)}
+            onClick={(e) => {
+              e.preventDefault()
+              onSectionChange(link.href)
+            }}
           >
             {link.label}
           </motion.a>
@@ -84,6 +96,8 @@ function NavLinks() {
 }
 
 function Home() {
+  const [activeSection, setActiveSection] = useState<string | null>(null)
+
   return (
     <div
       className={cn(
@@ -162,7 +176,7 @@ function Home() {
         </motion.p>
 
         {/* Nav links */}
-        <NavLinks />
+        <NavLinks activeSection={activeSection} onSectionChange={setActiveSection} />
 
         {/* Social icons — pinned toward bottom */}
         <motion.div
@@ -182,7 +196,7 @@ function Home() {
             <GithubIcon className="block w-[var(--icon-size-social)] h-[var(--icon-size-social)]" />
           </a>
           <a
-            href="https://linkedin.com/in/anishbudida"
+            href="https://www.linkedin.com/in/anish-budida-57994723a/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -193,6 +207,20 @@ function Home() {
           </a>
         </motion.div>
       </motion.div>
+
+      {/* Right-side section panels */}
+      <div className="absolute inset-y-0 right-0 z-10 flex w-[50%] items-center justify-center px-8">
+        {activeSection === '#about' && (
+          <section id="about" className="w-full max-w-[798px]">
+            <AboutCard className="w-full" />
+          </section>
+        )}
+        {activeSection === '#credits' && (
+          <section id="credits" className="w-full max-w-[798px]">
+            <CreditsCard />
+          </section>
+        )}
+      </div>
     </div>
   )
 }

@@ -17,7 +17,6 @@ When asked to extract a design from Figma URL,
 
 Do not:
 - Directly edit any styles on any of the pages or components.
-- Replace any variables that have already been made.
 
 Output Rules:
 - Communicate styles that are in the Figma design and have already been added to the project.

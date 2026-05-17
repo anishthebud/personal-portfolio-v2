@@ -50,7 +50,7 @@ Use **Motion** (`motion/react`) for JS-driven animations. CSS keyframe animation
 
 ### Path Aliases
 
-Both `#/*` and `@/*` resolve to `./src/*`.
+Both `#/*` and `@/*` resolve to `./src/*`. The `~/*` alias does NOT exist — always use `@/*` or `#/*`.
 
 ### Data Fetching
 

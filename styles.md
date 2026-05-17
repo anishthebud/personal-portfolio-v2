@@ -72,3 +72,24 @@ These tokens describe the hover and selected/active visual treatments applied to
 ### Already-Existing Tokens (not duplicated)
 
 The default-state color (`--portfolio-purple: #a48fd4`), font family (`--font-display-portfolio`), and font size (`--font-size-nav-link: 4rem`) were already in `src/styles.css` and are referenced here for context only — no duplicates were written.
+
+---
+
+## About Me Card Surface (Figma node `2044-84`)
+
+Node `2044-84` is `Rectangle 2` — the main card panel of the About Me section. It is a rounded, translucent purple rectangle with a drop shadow.
+
+### New Tokens Added
+
+| Variable | Light value | Dark value | Usage |
+|---|---|---|---|
+| `--about-card-bg` | `var(--credits-surface)` → `rgba(60, 28, 133, 0.8)` | `var(--credits-surface)` → `rgba(60, 28, 133, 0.92)` | Fill color of the About Me card panel |
+| `--about-card-radius` | `40px` | `40px` | Corner radius of the card |
+| `--about-card-shadow` | `5px 5px 10px 0px rgba(0, 0, 0, 0.5)` | `5px 5px 10px 0px rgba(0, 0, 0, 0.7)` | Drop shadow on the card (deeper in dark mode) |
+
+### Already-Existing Tokens (not duplicated)
+
+| Token | Value | Reason reused |
+|---|---|---|
+| `--credits-surface` | `rgba(60, 28, 133, 0.8)` | Exact fill match; `--about-card-bg` is an alias pointing to it |
+| `.section-card` box-shadow | `5px 5px 10px 0 rgba(0, 0, 0, 0.5)` | Same shadow value already in the utility class, now also exposed as `--about-card-shadow` variable |
