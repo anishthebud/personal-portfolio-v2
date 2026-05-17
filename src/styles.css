@@ -50,6 +50,22 @@
   --project-card-label-color: #ffffff;                /* white — card title text color */
   --font-size-project-card-label: 1.5rem;             /* 24px — project card title text size */
 
+  /* --- Project Detail / Expanded Card (Figma: node 2044-185) --- */
+  --detail-card-radius: 30px;                          /* 30px corner radius on the expanded project detail panel */
+  --detail-card-size: 674px;                           /* fixed square dimension of the detail panel */
+  --detail-card-banner-width: 624px;                   /* full-bleed banner image width inside the detail card */
+  --detail-card-banner-height: 215px;                  /* banner image height inside the detail card */
+  --font-size-detail-body: 1.125rem;                   /* 18px — body description text inside detail card */
+  --font-size-skill-badge: 1.25rem;                    /* 20px — skill badge label text */
+  --skill-badge-height: 30px;                          /* fixed height of each skill badge chip */
+  --skill-badge-width: 103px;                          /* fixed width of each skill badge chip */
+
+  /* --- Skill Area Cards (Figma: node 4042-118) --- */
+  --skill-area-card-width: 250px;                      /* fixed width of each tall portrait skill card */
+  --skill-area-card-height: 714px;                     /* fixed height of each tall portrait skill card */
+  --skill-area-card-image-width: 194px;                /* city photo width inside each skill card */
+  --skill-area-card-image-height: 583px;               /* city photo height inside each skill card */
+
   /* --- Experience Cards --- */
   --experience-card-bg: rgba(100, 26, 118, 0.85);     /* violet-magenta purple — noticeably different from project cards */
   --projects-section-bg: rgba(30, 12, 95, 0.85);      /* outer container for projects panel */

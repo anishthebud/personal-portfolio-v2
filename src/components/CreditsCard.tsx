@@ -8,8 +8,6 @@ const CREDITS = [
   'GROWER',
   'Georgia-Pacific',
   'The Computer Science Community',
-  'Mass Effect Legendary Edition',
-  'Star Wars Jedi Series',
 ]
 
 interface CreditsCardProps {
@@ -38,8 +36,7 @@ export function CreditsCard({ className }: CreditsCardProps) {
         ))}
       </ul>
       <p className="text-2xl">
-        Built By <strong>Anish Budida</strong> With the Help of{' '}
-        <strong>Claude Code</strong>
+        Built By <strong>Anish Budida</strong>
       </p>
     </motion.div>
   )

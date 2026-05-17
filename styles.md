@@ -125,3 +125,102 @@ Node `2044-120` is the project card grid — a 2-column, 3-row layout of 6 proje
 ### Typography Detail
 
 Card labels use `font-family: Alegreya Sans SC`, `font-weight: 500` (Medium), `font-size: 24px` (`--font-size-project-card-label`), `color: #ffffff` (`--project-card-label-color`), `font-style: normal`, `line-height: normal`.
+
+---
+
+## Project Detail / Expanded Card (Figma node `2044-185`)
+
+Node `2044-185` is the expanded detail view that appears when a project card is opened. It is a large square panel (674 x 674px) with the same deep purple fill as the project cards, containing: a full-width banner image at the top, a bold role/title heading, a body description paragraph, and a horizontal row of skill badge chips at the bottom.
+
+### New Tokens Added
+
+| Variable | Value | Usage |
+|---|---|---|
+| `--detail-card-radius` | `30px` | Corner radius on the expanded detail panel — distinct from `40px` (about card) and `10px` (project card) |
+| `--detail-card-size` | `674px` | Fixed square dimension (width and height) of the detail panel |
+| `--detail-card-banner-width` | `624px` | Width of the banner image inside the detail card |
+| `--detail-card-banner-height` | `215px` | Height of the banner image inside the detail card |
+| `--font-size-detail-body` | `1.125rem` (18px) | Body description text — `font-weight: 400` (Regular), `font-family: Alegreya Sans SC` |
+| `--font-size-skill-badge` | `1.25rem` (20px) | Skill badge label text — `font-weight: 700` (Bold), `font-family: Alegreya Sans SC` |
+| `--skill-badge-height` | `30px` | Fixed height of each skill badge chip |
+| `--skill-badge-width` | `103px` | Fixed width of each skill badge chip |
+
+### Already-Existing Tokens (not duplicated)
+
+| Token | Value | Reason reused |
+|---|---|---|
+| `--credits-surface` | `rgba(60, 28, 133, 0.8)` | Exact fill match — same background as the project and about cards |
+| `--about-card-shadow` | `5px 5px 10px 0px rgba(0, 0, 0, 0.5)` | Same drop shadow on the panel |
+| `--project-card-label-color` | `#ffffff` | Title text is the same white |
+| `--portfolio-subtitle` | `#e2dcef` | Skill badge label color is the same light lavender |
+| `--font-size-subtitle` | `2rem` (32px) | Detail card title is also 32px — no new token needed |
+| `--font-display-portfolio` | `'Alegreya Sans SC', Georgia, serif` | All text in this view uses Alegreya Sans SC |
+
+### Typography Detail
+
+| Element | Font | Weight | Size | Color |
+|---|---|---|---|---|
+| Title / role heading | Alegreya Sans SC | 700 (Bold) | `--font-size-subtitle` (32px) | `#ffffff` |
+| Body description | Alegreya Sans SC | 400 (Regular) | `--font-size-detail-body` (18px) | `#ffffff` |
+| Skill badge label | Alegreya Sans SC | 700 (Bold) | `--font-size-skill-badge` (20px) | `--portfolio-subtitle` (#e2dcef) |
+
+### Layout Structure
+
+```
+┌──────────────────────────────────┐  ← 674 x 674px panel
+│  ┌────────────────────────────┐  │  ← banner image (624 x 215px)
+│  │         [image]            │  │
+│  └────────────────────────────┘  │
+│  Content Creation Manager        │  ← 32px Bold title
+│  Lorem ipsum…                    │  ← 18px Regular body, ~5 lines
+│                                  │
+│  [Skill #1] [Skill #2] [Skill #3]│  ← 103 x 30px badge chips
+└──────────────────────────────────┘
+```
+
+---
+
+## Skill Area Cards (Figma node `4042-118`)
+
+Node `4042-118` is the three-column skill area layout containing tall portrait cards for **Full-Stack Development**, **Machine Learning**, and **Product Management**. Each card is a fixed-size rounded purple rectangle with a full-height city photograph (Shanghai skyline) filling the top portion and a centered label below it.
+
+### New Tokens Added
+
+| Variable | Value | Usage |
+|---|---|---|
+| `--skill-area-card-width` | `250px` | Fixed width of each tall portrait skill card |
+| `--skill-area-card-height` | `714px` | Fixed height of each tall portrait skill card |
+| `--skill-area-card-image-width` | `194px` | City photo (Shanghai) width inside each card |
+| `--skill-area-card-image-height` | `583px` | City photo height inside each card |
+
+### Already-Existing Tokens (not duplicated)
+
+| Token | Value | Reason reused |
+|---|---|---|
+| `--credits-surface` / `--about-card-bg` | `rgba(60, 28, 133, 0.8)` | Exact fill match — same deep purple translucent background |
+| `--project-card-radius` | `10px` | Exact corner radius match |
+| `--about-card-shadow` | `5px 5px 10px 0px rgba(0, 0, 0, 0.5)` | Exact drop shadow match |
+| `--portfolio-subtitle` | `#e2dcef` | Label text color (light lavender) |
+| `--font-size-subtitle` | `2rem` (32px) | Label font size — same 32px used here |
+| `--font-display-portfolio` | `'Alegreya Sans SC', Georgia, serif` | Label font family |
+
+### Typography Detail
+
+Label text (e.g., "Full-Stack Development") uses `font-family: Alegreya Sans SC`, `font-weight: 400` (Regular), `font-size: 32px` (`--font-size-subtitle`), `color: #e2dcef` (`--portfolio-subtitle`), `font-style: normal`, `text-align: center`, `line-height: normal`.
+
+### Layout Structure
+
+```
+┌──────────────────┐  ← 250 x 714px card  (--skill-area-card-width / height)
+│                  │     fill: rgba(60,28,133,0.8)  (--credits-surface)
+│   ┌──────────┐   │     radius: 10px  (--project-card-radius)
+│   │          │   │     shadow: 5px 5px 10px 0 rgba(0,0,0,0.5)
+│   │  [photo] │   │  ← 194 x 583px city image  (--skill-area-card-image-*)
+│   │          │   │     positioned 28px from left edge, 29px from top
+│   └──────────┘   │
+│  Full-Stack       │  ← 32px Regular Alegreya Sans SC, #e2dcef, centered
+│  Development      │     (multi-line allowed; image ends ~628px from top)
+└──────────────────┘
+
+Three cards sit side-by-side, spaced 274px apart (left edges at 737px, 1011px, 1285px on the original canvas).
+```

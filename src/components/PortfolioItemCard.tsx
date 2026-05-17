@@ -7,6 +7,7 @@ interface PortfolioItemCardProps {
   subtitle?: string
   bgColor: string
   href?: string
+  onClick?: () => void
   className?: string
 }
 
@@ -16,6 +17,7 @@ export function PortfolioItemCard({
   subtitle,
   bgColor,
   href,
+  onClick,
   className,
 }: PortfolioItemCardProps) {
   const cardContent = (
@@ -24,7 +26,9 @@ export function PortfolioItemCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
       whileHover={{ scale: 1.03, boxShadow: '5px 5px 18px 0px rgba(0, 0, 0, 0.7)' }}
+      onClick={onClick}
       className={cn(
+        onClick && 'cursor-pointer',
         'flex flex-col w-full overflow-hidden',
         'rounded-[var(--project-card-radius)]',
         'shadow-[var(--project-card-shadow)]',

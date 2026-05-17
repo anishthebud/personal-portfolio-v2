@@ -6,6 +6,7 @@ import { CreditsCard } from '@/components/CreditsCard'
 import { AboutCard } from '@/components/AboutCard'
 import { ProjectsCard } from '@/components/ProjectsCard'
 import { ExperienceCard } from '@/components/ExperienceCard'
+import { SkillsCard } from '@/components/SkillsCard'
 
 
 export const Route = createFileRoute('/')({ component: Home })
@@ -225,6 +226,11 @@ function Home() {
         {activeSection === '#experience' && (
           <section id="experience" className="my-auto py-[8vh] w-full max-w-[798px]">
             <ExperienceCard className="w-full" />
+          </section>
+        )}
+        {activeSection === '#skills' && (
+          <section id="skills" className="my-auto py-[8vh] w-full max-w-[798px]">
+            <SkillsCard className="w-full" />
           </section>
         )}
         {activeSection === '#credits' && (
