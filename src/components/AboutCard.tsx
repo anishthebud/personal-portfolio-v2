@@ -1,5 +1,4 @@
 import { motion } from 'motion/react'
-import { Folder, MapPin, TreePine, BookImage } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const gtLogoUrl =
