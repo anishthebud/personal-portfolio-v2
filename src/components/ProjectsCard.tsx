@@ -67,7 +67,8 @@ const PROJECTS: ProjectItem[] = [
   },
   {
     title: 'Confido',
-    image: '/images/placeholder.png',
+    image: '/images/projects/confido.png',
+    projectUrl: 'https://confido-xi.vercel.app/',
     href: 'https://github.com/anishthebud/confido',
     description:
       'AI-powered public speaking coach built at a hackathon. Full-stack web app with gamified scoring, an interactive AI avatar, and real-time feedback on confidence and filler words. My focus was on developing the user experience, gamification process, and managing the database.',
