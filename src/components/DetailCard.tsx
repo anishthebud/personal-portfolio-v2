@@ -30,9 +30,9 @@ export function DetailCard({
         'rounded-[var(--detail-card-radius)]',
         'bg-[var(--credits-surface)]',
         'shadow-[var(--about-card-shadow)]',
-        'font-[var(--font-display-portfolio)]',
         className,
       )}
+      style={{ fontFamily: 'var(--font-display-portfolio)' }}
     >
       {/* Banner image with back button overlay */}
       <div className="relative w-full">

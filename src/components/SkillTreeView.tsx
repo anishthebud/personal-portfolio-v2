@@ -27,9 +27,9 @@ export function SkillTreeView({
         'rounded-[var(--detail-card-radius)]',
         'bg-[var(--credits-surface)]',
         'shadow-[var(--about-card-shadow)]',
-        'font-[var(--font-display-portfolio)]',
         className,
       )}
+      style={{ fontFamily: 'var(--font-display-portfolio)' }}
     >
       {/* Content area */}
       <div className="flex flex-col gap-5 pt-5 px-6 pb-6">
