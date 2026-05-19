@@ -49,6 +49,15 @@ const PROJECTS: ProjectItem[] = [
     skills: ['JavaScript', 'Node.js', 'Express', 'FFmpeg', 'yt-dlp', 'MediaRecorder API', 'REST APIs', 'CORS'],
   },
   {
+    title: 'Confido',
+    image: '/images/projects/confido.png',
+    projectUrl: 'https://confido-xi.vercel.app/',
+    href: 'https://github.com/anishthebud/confido',
+    description:
+      'AI-powered public speaking coach built at a hackathon. Full-stack web app with gamified scoring, an interactive AI avatar, and real-time feedback on confidence and filler words. My focus was on developing the user experience, gamification process, and managing the database.',
+    skills: ['SvelteKit', 'TypeScript', 'Supabase', 'LLM Integration', 'Speech-to-Text', 'Text-to-Speech', 'Stable Diffusion', 'Pinata/IPFS'],
+  },
+  {
     title: 'Traffic Accident Analyzer',
     image: '/images/projects/traffic_accident_analyzer.png',
     projectUrl: 'https://github.gatech.edu/pages/vpatra3/ML-Traffic-Analyzer/',
@@ -64,15 +73,6 @@ const PROJECTS: ProjectItem[] = [
     description:
       'Hackathon project focused on building a native Android accessibility app enabling two-way communication between deaf/blind and sighted/hearing users via a custom Braille keyboard and vibration patterns. My focus was on developing the user experience and the frontend for the app.',
     skills: ['Java', 'Android SDK', 'Google Cloud', 'UI/UX Design', 'Speech Recognition', 'Material Design', 'Multi-threading', 'Accessibility'],
-  },
-  {
-    title: 'Confido',
-    image: '/images/projects/confido.png',
-    projectUrl: 'https://confido-xi.vercel.app/',
-    href: 'https://github.com/anishthebud/confido',
-    description:
-      'AI-powered public speaking coach built at a hackathon. Full-stack web app with gamified scoring, an interactive AI avatar, and real-time feedback on confidence and filler words. My focus was on developing the user experience, gamification process, and managing the database.',
-    skills: ['SvelteKit', 'TypeScript', 'Supabase', 'LLM Integration', 'Speech-to-Text', 'Text-to-Speech', 'Stable Diffusion', 'Pinata/IPFS'],
   },
 ]
 
