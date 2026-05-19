@@ -33,15 +33,6 @@ Navigation is driven by a left-panel nav that slides in the corresponding sectio
 
 Deployed to **Vercel** using the Nitro server adapter. The build outputs via `vite build` and Nitro handles the serverless function layer for SSR.
 
-```bash
-# Local development
-npm run dev        # dev server on port 3000
-
-# Production build
-npm run build
-npm run preview    # preview the production build locally
-```
-
 ## Project Structure
 
 ```
@@ -54,17 +45,4 @@ src/
   components/       # UI cards for each portfolio section
   lib/utils.ts      # cn() utility (clsx + tailwind-merge)
   styles.css        # Tailwind v4 config, CSS variables, custom animations
-```
-
-## Getting Started
-
-```bash
-pnpm install
-npm run dev
-```
-
-To add Shadcn components:
-
-```bash
-pnpm dlx shadcn@latest add <component>
 ```
