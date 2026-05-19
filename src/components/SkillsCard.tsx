@@ -23,7 +23,7 @@ const SKILL_AREAS: SkillArea[] = [
       },
       {
         label: 'Frontend',
-        skills: ['React', 'SvelteKit', 'Tailwind CSS', 'Vite', 'TanStack Router', 'Component Architecture', 'State Management', 'Custom Hooks', 'UI/UX Design'],
+        skills: ['React', 'SvelteKit', 'Tailwind CSS', 'Vite', 'TanStack Start', 'TanStack Router', 'Motion', 'CVA', 'Shadcn UI', 'Component Architecture', 'State Management', 'Custom Hooks', 'UI/UX Design'],
       },
       {
         label: 'Backend',
@@ -35,7 +35,7 @@ const SKILL_AREAS: SkillArea[] = [
       },
       {
         label: 'Cloud & DevOps',
-        skills: ['AWS', 'Docker', 'CI/CD', 'GitHub Actions', 'Google Cloud'],
+        skills: ['AWS', 'Docker', 'CI/CD', 'GitHub Actions', 'Google Cloud', 'Vercel', 'Nitro'],
       },
       {
         label: 'Mobile & Desktop',
@@ -62,7 +62,7 @@ const SKILL_AREAS: SkillArea[] = [
       },
       {
         label: 'AI & LLM',
-        skills: ['OpenAI API', 'Claude API', 'LLM Integration', 'Prompt Engineering'],
+        skills: ['OpenAI API', 'Claude API', 'Claude Code', 'LLM Integration', 'Prompt Engineering', 'AI-Assisted Development'],
       },
       {
         label: 'Speech & Vision',
@@ -89,7 +89,7 @@ const SKILL_AREAS: SkillArea[] = [
       },
       {
         label: 'Design',
-        skills: ['UI/UX Design', 'Accessibility Engineering', 'Gamification'],
+        skills: ['UI/UX Design', 'Figma', 'Accessibility Engineering', 'Gamification'],
       },
       {
         label: 'Communication',

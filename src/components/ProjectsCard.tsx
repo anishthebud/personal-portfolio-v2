@@ -15,6 +15,14 @@ interface ProjectItem {
 
 const PROJECTS: ProjectItem[] = [
   {
+    title: 'Personal Portfolio v2',
+    image: '/images/projects/personal_portfolio.jpg',
+    href: 'https://github.com/anishthebud/personal-portfolio-v2',
+    description:
+      'Personal portfolio website built with TanStack Start and React 19. Features a dark cinematic aesthetic with an animated background video, a split-panel nav layout, and smooth Motion-powered transitions. Designed in Figma and implemented with Claude Code agents that converted Figma frames directly into production React components.',
+    skills: ['TanStack Start', 'React', 'TypeScript', 'Tailwind CSS', 'Motion', 'Shadcn UI', 'Vite', 'Nitro', 'Vercel', 'Figma', 'Claude Code', 'Multi-Agent Workflow'],
+  },
+  {
     title: 'Content Creation Manager',
     image: '/images/projects/content_creation_manager.png',
     href: 'https://github.com/anishthebud/content-creation-manager',
@@ -47,15 +55,6 @@ const PROJECTS: ProjectItem[] = [
     description:
       'Chrome extension paired with a Node.js backend that overlays user-recorded voiceovers onto YouTube videos using FFmpeg composition.',
     skills: ['JavaScript', 'Node.js', 'Express', 'FFmpeg', 'yt-dlp', 'MediaRecorder API', 'REST APIs', 'CORS'],
-  },
-  {
-    title: 'Confido',
-    image: '/images/projects/confido.png',
-    projectUrl: 'https://confido-xi.vercel.app/',
-    href: 'https://github.com/anishthebud/confido',
-    description:
-      'AI-powered public speaking coach built at a hackathon. Full-stack web app with gamified scoring, an interactive AI avatar, and real-time feedback on confidence and filler words. My focus was on developing the user experience, gamification process, and managing the database.',
-    skills: ['SvelteKit', 'TypeScript', 'Supabase', 'LLM Integration', 'Speech-to-Text', 'Text-to-Speech', 'Stable Diffusion', 'Pinata/IPFS'],
   },
   {
     title: 'Traffic Accident Analyzer',
