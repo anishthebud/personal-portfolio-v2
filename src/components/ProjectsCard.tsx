@@ -16,10 +16,11 @@ interface ProjectItem {
 const PROJECTS: ProjectItem[] = [
   {
     title: 'Personal Portfolio v2',
-    image: '/images/projects/personal_portfolio.jpg',
+    image: '/images/placeholder.png',
+    projectUrl: 'https://github.com/anishthebud/personal-portfolio-v2',
     href: 'https://github.com/anishthebud/personal-portfolio-v2',
     description:
-      'Personal portfolio website built with TanStack Start and React 19. Features a dark cinematic aesthetic with an animated background video, a split-panel nav layout, and smooth Motion-powered transitions. Designed in Figma and implemented with Claude Code agents that converted Figma frames directly into production React components.',
+      'Personal portfolio website built with TanStack Start and React. Features a dark cinematic aesthetic with an animated background video, a split-panel nav layout, and smooth Motion-powered transitions. Designed in Figma and implemented with Claude Code agents that converted Figma frames directly into production React components.',
     skills: ['TanStack Start', 'React', 'TypeScript', 'Tailwind CSS', 'Motion', 'Shadcn UI', 'Vite', 'Nitro', 'Vercel', 'Figma', 'Claude Code', 'Multi-Agent Workflow'],
   },
   {
@@ -49,12 +50,13 @@ const PROJECTS: ProjectItem[] = [
     skills: ['TypeScript', 'React', 'Chrome Extension APIs', 'Service Workers', 'Vite', 'Browser Storage', 'Custom Hooks'],
   },
   {
-    title: 'YouTube-VoiceOver',
-    image: '/images/placeholder.png',
-    href: 'https://github.com/anishthebud/YouTube-VoiceOver',
+    title: 'Confido',
+    image: '/images/projects/confido.png',
+    projectUrl: 'https://confido-xi.vercel.app/',
+    href: 'https://github.com/anishthebud/confido',
     description:
-      'Chrome extension paired with a Node.js backend that overlays user-recorded voiceovers onto YouTube videos using FFmpeg composition.',
-    skills: ['JavaScript', 'Node.js', 'Express', 'FFmpeg', 'yt-dlp', 'MediaRecorder API', 'REST APIs', 'CORS'],
+      'AI-powered public speaking coach built at a hackathon. Full-stack web app with gamified scoring, an interactive AI avatar, and real-time feedback on confidence and filler words. My focus was on developing the user experience, gamification process, and managing the database.',
+    skills: ['SvelteKit', 'TypeScript', 'Supabase', 'LLM Integration', 'Speech-to-Text', 'Text-to-Speech', 'Stable Diffusion', 'Pinata/IPFS'],
   },
   {
     title: 'Traffic Accident Analyzer',
@@ -72,6 +74,14 @@ const PROJECTS: ProjectItem[] = [
     description:
       'Hackathon project focused on building a native Android accessibility app enabling two-way communication between deaf/blind and sighted/hearing users via a custom Braille keyboard and vibration patterns. My focus was on developing the user experience and the frontend for the app.',
     skills: ['Java', 'Android SDK', 'Google Cloud', 'UI/UX Design', 'Speech Recognition', 'Material Design', 'Multi-threading', 'Accessibility'],
+  },
+  {
+    title: 'YouTube-VoiceOver',
+    image: '/images/placeholder.png',
+    href: 'https://github.com/anishthebud/YouTube-VoiceOver',
+    description:
+      'Chrome extension paired with a Node.js backend that overlays user-recorded voiceovers onto YouTube videos using FFmpeg composition.',
+    skills: ['JavaScript', 'Node.js', 'Express', 'FFmpeg', 'yt-dlp', 'MediaRecorder API', 'REST APIs', 'CORS'],
   },
 ]
 
