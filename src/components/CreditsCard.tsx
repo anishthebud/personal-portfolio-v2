@@ -5,6 +5,7 @@ const CREDITS = [
   'Friends, Family, Teachers, Mentors',
   'Georgia Institute of Technology',
   'Hackathon Teammates',
+  'BizFirstAI',
   'GROWER',
   'Georgia-Pacific',
   'The Computer Science Community',

@@ -19,23 +19,27 @@ const SKILL_AREAS: SkillArea[] = [
     categories: [
       {
         label: 'Languages',
-        skills: ['Python', 'TypeScript', 'JavaScript', 'Java', 'C++', 'SQL', 'HTML', 'CSS'],
+        skills: ['Python', 'TypeScript', 'JavaScript', 'Java', 'C', 'C++', 'C#', 'SQL', 'HTML', 'CSS', 'Bash', 'PowerShell', 'Salesforce'],
       },
       {
         label: 'Frontend',
-        skills: ['React', 'SvelteKit', 'Tailwind CSS', 'Vite', 'TanStack Start', 'TanStack Router', 'Motion', 'CVA', 'Shadcn UI', 'Component Architecture', 'State Management', 'Custom Hooks', 'UI/UX Design'],
+        skills: ['React', 'SvelteKit', 'Tailwind CSS', 'Vite', 'TanStack Start', 'TanStack Router', 'Motion', 'CVA', 'Shadcn UI', 'Component Architecture', 'State Management', 'Custom Hooks', 'Responsive Design', 'UI/UX Design'],
       },
       {
         label: 'Backend',
-        skills: ['FastAPI', 'Node.js', 'Express', 'REST APIs', 'Authentication', 'CRUD Operations'],
+        skills: ['FastAPI', 'Node.js', 'Express', '.NET', 'REST APIs', 'API Design', 'Service-Oriented Architecture', 'Authentication', 'CRUD Operations'],
       },
       {
         label: 'Databases',
-        skills: ['MongoDB', 'Supabase', 'PostgreSQL', 'Browser Storage'],
+        skills: ['MongoDB', 'Supabase', 'PostgreSQL', 'PostGIS', 'Redis', 'NoSQL', 'Alembic', 'Browser Storage'],
       },
       {
         label: 'Cloud & DevOps',
-        skills: ['AWS', 'Docker', 'CI/CD', 'GitHub Actions', 'Google Cloud', 'Vercel', 'Nitro'],
+        skills: ['AWS', 'Docker', 'Docker Compose', 'Nginx', 'CI/CD', 'GitHub Actions', 'Google Cloud', 'Vercel', 'Nitro', 'Firebase', 'Linux'],
+      },
+      {
+        label: 'Observability & Infrastructure',
+        skills: ['Prometheus', 'Grafana', 'Loki', 'Tempo', 'Kafka', 'MinIO', 'Distributed Tracing', 'Deployment Automation', 'Multi-Tier Storage'],
       },
       {
         label: 'Mobile & Desktop',
@@ -47,7 +51,11 @@ const SKILL_AREAS: SkillArea[] = [
       },
       {
         label: 'Media & Tools',
-        skills: ['FFmpeg', 'yt-dlp', 'Media Processing', 'Git'],
+        skills: ['FFmpeg', 'yt-dlp', 'Media Processing', 'Git', 'GitHub'],
+      },
+      {
+        label: 'Engineering Practices',
+        skills: ['Data Structures & Algorithms', 'Object-Oriented Programming', 'System Design', 'Technical Leadership', 'Code Review', 'Mentorship'],
       },
     ],
   },
@@ -58,11 +66,11 @@ const SKILL_AREAS: SkillArea[] = [
     categories: [
       {
         label: 'Core ML',
-        skills: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Machine Learning', 'Cosine Similarity', 'NLP', 'Predictive Modeling'],
+        skills: ['scikit-learn', 'TensorFlow', 'PyTorch', 'Machine Learning', 'Cosine Similarity', 'NLP', 'Predictive Modeling', 'Recommendation Systems'],
       },
       {
         label: 'AI & LLM',
-        skills: ['OpenAI API', 'Claude API', 'Claude Code', 'LLM Integration', 'Prompt Engineering', 'AI-Assisted Development'],
+        skills: ['OpenAI API', 'Anthropic API', 'Claude Code', 'LLM Integration', 'RAG', 'Prompt Engineering', 'AI-Assisted Development', 'Multi-Model Orchestration', 'Local LLM Deployment', 'Gemini API', 'Groq', 'Model Selection', 'Constrained Optimization'],
       },
       {
         label: 'Speech & Vision',
@@ -70,7 +78,7 @@ const SKILL_AREAS: SkillArea[] = [
       },
       {
         label: 'Data & Analytics',
-        skills: ['Pandas', 'NumPy', 'Matplotlib', 'Plotly', 'Data Visualization'],
+        skills: ['Pandas', 'NumPy', 'Matplotlib', 'Plotly', 'Data Visualization', 'GeoPandas', 'QGIS', 'GDAL/OGR', 'Geospatial Mapping'],
       },
       {
         label: 'Data Collection',
@@ -85,15 +93,15 @@ const SKILL_AREAS: SkillArea[] = [
     categories: [
       {
         label: 'Methodology',
-        skills: ['Agile Development', 'User Research', 'Competitive Analysis'],
+        skills: ['Agile Development', 'User Research', 'Competitive Analysis', 'SWOT Analysis'],
       },
       {
         label: 'Design',
-        skills: ['UI/UX Design', 'Figma', 'Accessibility Engineering', 'Gamification'],
+        skills: ['UI/UX Design', 'Figma', 'Accessibility Engineering', 'Gamification', 'Augmented Reality'],
       },
       {
         label: 'Communication',
-        skills: ['Stakeholder Presentations', 'Feasibility Analysis', 'Cross-Functional Collaboration'],
+        skills: ['Stakeholder Presentations', 'Feasibility Analysis', 'Cost Modeling', 'Cross-Functional Collaboration'],
       },
       {
         label: 'Delivery',

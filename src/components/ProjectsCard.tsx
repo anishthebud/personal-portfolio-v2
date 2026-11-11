@@ -8,12 +8,35 @@ interface ProjectItem {
   title: string
   image: string
   projectUrl?: string
-  href: string
+  href?: string
   description: string
   skills: string[]
 }
 
 const PROJECTS: ProjectItem[] = [
+  {
+    title: 'GeoGuessr Study Tool',
+    image: '/images/projects/geoguessr.png',
+    description:
+      'Solo, in-progress analytics and training platform that ingests a player\'s GeoGuessr history through an ETL pipeline into a 12-table PostgreSQL/PostGIS schema. Uses a confusion matrix and machine learning to rank weaknesses by country and game mode and recommend targeted drills, with an interactive PostGIS meta map. Planning a RAG-based AI location-prediction agent, built with phased multi-agent workflows in Claude Code.',
+    skills: ['Python', 'React', 'PostgreSQL', 'PostGIS', 'GeoPandas', 'QGIS', 'GDAL/OGR', 'Machine Learning', 'RAG', 'ETL Pipelines', 'Claude Code'],
+  },
+  {
+    title: 'SomeOS',
+    image: '/images/projects/someOS.jpg',
+    href: 'https://github.com/anishthebud/SomeOS/tree/main',
+    description:
+      'Privacy-focused, self-hosted AI platform that runs a Gemini LLM on an ASUS computer in the home, reachable over the LAN. Transcribes in-home audio with Deepgram, turns it into structured wiki notes, and offers a chat interface over stored notes and documents, following Andrej Karpathy\'s "second brain" approach to LLM-maintained knowledge bases.',
+    skills: ['Google Gemini API', 'Deepgram API', 'LLMs', 'NLP', 'Speech-to-Text', 'REST APIs', 'Self-Hosted Deployment', 'LAN'],
+  },
+  {
+    title: 'RetroFi',
+    image: '/images/projects/retroFi.png',
+    projectUrl: 'https://devpost.com/software/secret-project-j5g7y8#submission-history',
+    description:
+      'AI home electrification advisor built at a hackathon (Play with Purpose, presented by Cox Enterprises). Turns a home address into a fully-costed, multi-year electrification roadmap in 1-2 minutes by orchestrating a RAG-based incentive-matching pipeline, a deterministic cost/savings engine, and constrained-optimization sequencing across local Qwen2.5 models and the Anthropic API.',
+    skills: ['Python', 'FastAPI', 'React', 'RAG', 'Ollama/Qwen2.5', 'Anthropic API', 'Constrained Optimization', 'Docker', 'Google Cloud Run', 'Firebase'],
+  },
   {
     title: 'Personal Portfolio v2',
     image: '/images/projects/personal_portfolio.jpg',

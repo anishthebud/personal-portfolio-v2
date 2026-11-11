@@ -13,24 +13,38 @@ interface ExperienceItem {
 
 const EXPERIENCES: ExperienceItem[] = [
   {
+    title: 'Bits of Good',
+    image: '/images/experiences/bitsOfGood.png',
+    description:
+      'Software Developer at FOCUS, building Salesforce reporting, dashboards, and list views for a disability equipment manager tracking 20+ items. Developing a backend controller that fetches equipment attributes for advanced analytics, while collaborating with a team of 6 so the code works across iterations and is easy for a non-profit to use.',
+    skills: ['Salesforce', 'Object-Oriented Development', 'Dashboards & Reporting', 'Backend Controllers', 'Team Collaboration'],
+  },
+  {
+    title: 'BizFirstAI',
+    image: '/images/experiences/bizfirstai.jpeg',
+    description:
+      'Software Engineer Intern architecting a reusable infrastructure hub for customer deployments. Designed a one-command PowerShell/Bash deployment system cutting deploy time 50%, stood up a full Prometheus/Grafana/Loki/Tempo/Kafka observability stack, and led a multi-tier MinIO storage project while mentoring a fellow intern.',
+    skills: ['PowerShell', 'Bash', 'Docker', 'Nginx', 'Prometheus', 'Grafana', 'Loki', 'Tempo', 'Kafka', 'MinIO', 'Deployment Automation', 'Mentorship'],
+  },
+  {
     title: 'GROWER',
     image: '/images/experiences/grower.png',
     description:
-      'Software Engineer that partnered with the Internet Intelligence Lab, researching correlations between power outages and internet outages. Built and maintained Python/Selenium scrapers deployed on AWS.',
-    skills: ['Python', 'Pandas', 'Selenium', 'Web Scraping', 'AWS', 'Docker', 'Matplotlib', 'Plotly', 'ETL Pipelines'],
+      'Software Engineer in the Georgia Tech Internet Intelligence Lab, establishing power-outage data as a predictive ground truth for internet disruptions. Built Dockerized Python/Selenium scrapers on AWS for 10+ utility sources, produced 20+ graphs and county-level maps, and fixed 5+ scraper failures via CloudWatch. Leading 7 engineers and designing new member onboarding.',
+    skills: ['Python', 'Pandas', 'Selenium', 'Web Scraping', 'AWS', 'CloudWatch', 'Docker', 'Matplotlib', 'Plotly', 'ETL Pipelines', 'Team Leadership'],
   },
   {
     title: 'Georgia-Pacific',
     image: '/images/experiences/georgia_pacific.png',
     description:
-      'Product Fellow focused on redesigning the digital interface for GP PRO dispensers. Applied Agile methods, user research, and competitive analysis, then pitched feasibility and effectiveness to clients.',
-    skills: ['UI/UX', 'Product Management', 'Agile Development', 'User Research', 'Competitive Analysis'],
+      'Product Fellow redesigning the digital experience for GP PRO dispensers. Designed and pitched an AR solution projected to cut installation and maintenance time by 25%, modeled feasibility costs, and ran SWOT analysis across 4+ competitors to choose the highest-value UI/UX features.',
+    skills: ['UI/UX', 'Product Management', 'Augmented Reality', 'SWOT Analysis', 'User Research', 'Cost Modeling'],
   },
   {
     title: 'HexLabs',
     image: '/images/experiences/hexlabs.png',
     description:
-      'Operations Team member supporting logistics for HackGT, the largest hackathon at Georgia Tech. Managed vendor negotiations, co-produced a themed club showcase, and coordinated workshops for 1100+ participants.',
+      'Operations Team member supporting logistics for HackGT, the largest hackathon at Georgia Tech. Negotiated badge vendor costs down 35% ($2,000 to $1,300), co-produced a themed club showcase, and coordinated workshops for 1,100+ participants.',
     skills: ['Project Development', 'Communication', 'Logistics', 'Event Management', 'Vendor Negotiation'],
   },
 ]

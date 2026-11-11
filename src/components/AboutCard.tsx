@@ -26,8 +26,8 @@ export function AboutCard({ className }: AboutCardProps) {
       <div className="flex flex-col gap-1 text-[clamp(1.1rem,1.6vw,1.8rem)] leading-snug">
         <p>
           {' - '}
-          <span>Rising third-year CS major at </span>
-          <strong>Georgia Tech</strong> with <strong>3.96</strong> GPA
+          <span>Senior CS major at </span>
+          <strong>Georgia Tech</strong> with <strong>3.96</strong> GPA, graduating December 2027
         </p>
         <p>
           {' - '}
@@ -39,31 +39,31 @@ export function AboutCard({ className }: AboutCardProps) {
         <p>
           {' - '}
           <span>Interested in </span>
-          <strong>full-stack, machine learning, </strong>
+          <strong>full-stack </strong>
           <span>and </span>
-          <strong>product management</strong>
+          <strong>machine learning</strong>
         </p>
         <p>
           {' - '}
           <span>
-            Worked on <strong>GROWER</strong> Research Project and with <strong>Georgia-Pacific</strong>
+            Interned at <strong>BizFirstAI</strong>, developing at <strong>Bits of Good</strong>, worked on <strong>GROWER</strong> Research Project and with <strong>Georgia-Pacific</strong>
           </span>
         </p>
         <p>
           {' - '}
           <span>
-            Built Content Creation Manager, Steam VG personality Quiz, and more
+            Built RetroFi, GeoGuessr Study Tool, SomeOS, and more
           </span>
         </p>
         <p>
           {' - '}
           <span>Looking for </span>
-          <strong>Fall 2026 </strong>
+          <strong>Spring 2027 </strong>
           <span>and/or </span>
-          <strong>Summer 2027 SWE</strong>
-          <span> or </span>
-          <strong>PM</strong>
-          <span> internship</span>
+          <strong>Summer 2027 SWE </strong>
+          <span>or </span>
+          <strong>ML</strong>
+          <span> internships</span>
         </p>
       </div>
 
@@ -75,7 +75,6 @@ export function AboutCard({ className }: AboutCardProps) {
         <p>{' - Avid GeoGuessr player'}</p>
         <p>{' - Pursuing a sustainable cities minor'}</p>
         <p>{' - Love exploring and hiking'}</p>
-        <p>{' - Creating content on Instagram'}</p>
       </div>
     </motion.div>
   )
